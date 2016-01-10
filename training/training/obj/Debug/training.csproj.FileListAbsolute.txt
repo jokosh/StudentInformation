@@ -1,0 +1,12 @@
+c:\users\ncrp\documents\visual studio 2013\Projects\training\training\bin\training.dll.config
+c:\users\ncrp\documents\visual studio 2013\Projects\training\training\bin\training.dll
+c:\users\ncrp\documents\visual studio 2013\Projects\training\training\bin\training.pdb
+c:\users\ncrp\documents\visual studio 2013\Projects\training\training\obj\Debug\training.csprojResolveAssemblyReference.cache
+c:\users\ncrp\documents\visual studio 2013\Projects\training\training\obj\Debug\training.dll
+c:\users\ncrp\documents\visual studio 2013\Projects\training\training\obj\Debug\training.pdb
+C:\Users\ncrp\Desktop\TrainingProject\trunk\ss185596\Projects\training\training\bin\training.dll.config
+C:\Users\ncrp\Desktop\TrainingProject\trunk\ss185596\Projects\training\training\bin\training.dll
+C:\Users\ncrp\Desktop\TrainingProject\trunk\ss185596\Projects\training\training\bin\training.pdb
+C:\Users\ncrp\Desktop\TrainingProject\trunk\ss185596\Projects\training\training\obj\Debug\training.csprojResolveAssemblyReference.cache
+C:\Users\ncrp\Desktop\TrainingProject\trunk\ss185596\Projects\training\training\obj\Debug\training.dll
+C:\Users\ncrp\Desktop\TrainingProject\trunk\ss185596\Projects\training\training\obj\Debug\training.pdb

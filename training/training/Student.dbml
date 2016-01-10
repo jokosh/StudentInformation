@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RESTransaction" Class="StudentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=TRAINING;Initial Catalog=RESTransaction;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="RESTransactionConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.STUDENT_BASIC" Member="STUDENT_BASIC">
+    <Type Name="STUDENT_BASIC">
+      <Column Name="StudentId" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Gender" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="STUDENT_HEALTH_STUDENT_BASIC" Member="STUDENT_HEALTH" ThisKey="StudentId" OtherKey="StudentId" Type="STUDENT_HEALTH" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STUDENT_HEALTH" Member="STUDENT_HEALTH">
+    <Type Name="STUDENT_HEALTH">
+      <Column Name="StudentId" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Height" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Weight" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Year" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdealWeight" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Association Name="STUDENT_HEALTH_STUDENT_BASIC" Member="STUDENT_BASIC" ThisKey="StudentId" OtherKey="StudentId" Type="STUDENT_BASIC" Cardinality="One" />
+      <Association Name="STUDENT_HEALTH_STUDENT_SUMMARY" Member="STUDENT_SUMMARY" ThisKey="Year" OtherKey="Year" Type="STUDENT_SUMMARY" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STUDENT_SUMMARY" Member="STUDENT_SUMMARY">
+    <Type Name="STUDENT_SUMMARY">
+      <Column Name="Year" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaleCount" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="FemaleCount" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="MaleAvg" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="FemaleAvg" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Association Name="STUDENT_HEALTH_STUDENT_SUMMARY" Member="STUDENT_HEALTH" ThisKey="Year" OtherKey="Year" Type="STUDENT_HEALTH" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

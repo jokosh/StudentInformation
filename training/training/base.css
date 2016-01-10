@@ -1,0 +1,21 @@
+﻿body {
+    background-color: #E6F5EB ;
+}
+.grid {
+border-collapse:collapse;
+border: #000000 1px solid;
+}
+.grid th {
+border-style:solid;
+border-width:1px;
+border-color:#696969;
+background-color:#ffffff;
+color:#000000;
+padding:10px;
+}
+.grid td {
+border-style:solid;
+border-width:1px;
+border-color:#696969;
+padding:10px;
+}
